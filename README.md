@@ -1,10 +1,6 @@
 # Zuul demo repository!
 Added new parameter....!
-check..
-..
-...
-...
-.
+check
 zookeeper-servers:
   - host: zk
     port: 2281

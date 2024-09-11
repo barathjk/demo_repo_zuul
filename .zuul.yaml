@@ -2,22 +2,18 @@
 - job:
     name: demo-job
     run: .playbooks/demojob.yaml
-    name: print_check_job
-    run: .playbooks/print_check.yaml
-	
+
 - project:
     default-branch: main
     gh_check:
       jobs:
         - demo-job
-        - print_check_job
     gh_gate:
       jobs:
         - demo-job
     gh_post:
       jobs:
         - demo-job
-        - print_check_job
     gh_tag:
       jobs:
         - demo-job
